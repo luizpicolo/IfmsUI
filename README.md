@@ -1,1 +1,1 @@
-<h1>ifmsUI - Interace Gráfica</h1>
+<h1>ifmsUI - Interface Gráfica</h1>
