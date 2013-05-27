@@ -21,6 +21,11 @@ nav,
 section,
 summary {
     display: block;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /**
@@ -129,8 +134,13 @@ a:hover {
  * and Chrome.
  */
 
+
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
+    margin: 0 0 10px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -212,7 +222,7 @@ mark {
 
 p,
 pre {
-    margin: 0;
+    margin: 0 0 10px 0;
 }
 
 /**

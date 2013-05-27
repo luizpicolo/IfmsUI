@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Ifms - User Interface</title>
+        <title>IFMS User Interface</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -15,59 +15,89 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css' />
     </head>
+
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">Você está utilizando um navegador <strong>desatualizado</strong>. Por favor, <a href="http://browsehappy.com/">atualize seu navegador</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">ative o Google Chrome Frame</a> para melhorar sua experiência.</p>
         <![endif]-->
         
         <header id="header">
-            <h1>IFMS User Interface</h1>
-            <h2>Visão geral do projeto.</h2>
+            <hgroup class="grid">
+                <h1>IFMS User Interface</h1>
+                <h2>Visão geral do projeto.</h2>
+            </hgroup>
         </header>
 
-        <nav id="nav">
-            <ul>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
-        </nav>
+        <main id="main" class="grid">
+            <div class="row">
+                <nav id="nav" class="columns two columns-padding">
+                    <ul>
+                        <li><a href="#">Tipografia</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </nav>
 
-        <main id="main">
-            <section class="sessao">
-                <h1>Título</h1>
+                <div class="columns nine columns-right">
+                    <section class="section">
+                        <h1 class="title">1. Tipografia</h1>
 
-                <h2>Subtítulo</h2>
-                <p>
-                    Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                </p>
+                        <section class="sub-section">
+                            <h2>Cabeçalhos</h2>
+                            <p>
+                                Todos os cabeçalhos HTML, <code>&lt;h1&gt;</code> 
+                                até <code>&lt;h6&gt;</code> estão disponíveis.
+                            </p>
 
-                <h2>Subtítulo</h2>
-                <p>
-                    Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                </p>
+                            <div class="exemples">
+                                <h3 class="title-exemples">Exemple</h3>
 
-                <h2>Subtítulo</h2>
-                <p>
-                    Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                </p>
-            </section>
+                                <h1>h1. Cabeçalho 1</h1>
+                                <h2>h2. Cabeçalho 2</h2>
+                                <h3>h3. Cabeçalho 3</h3>
+                                <h4>h4. Cabeçalho 4</h4>
+                                <h5>h5. Cabeçalho 5</h5>
+                                <h6>h6. Cabeçalho 6</h6>
+                            </div>
+                        </section>
 
-            <section>
-                <h1>Título</h1>
+                        <h2>Subtítulo</h2>
+                        <p>
+                            Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                        </p>
 
-                <h2>Subtítulo</h2>
-                <p>
-                    Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                </p>
+                        <h2>Subtítulo</h2>
+                        <p>
+                            Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                        </p>
+                    </section>
 
-                <p>
-                    Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                </p>
-            </section>
+                    <section class="section">
+                        <h1 class="title">2. Título</h1>
+
+                        <h2>Subtítulo</h2>
+                        <p>
+                            Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                        </p>
+
+                        <p>
+                            Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                        </p>
+                    </section>
+                </div><!-- .columns .nine -->
+            </div><!-- .row -->
         </main>
+
+        <footer id="footer">
+            <div class="grid">
+                Todos os direitos reservados.
+            </div>
+        </footer>
        
         <script src="js/vendor/jquery-1.9.1.min.js"></script>
         <script src="js/plugins.js"></script>
