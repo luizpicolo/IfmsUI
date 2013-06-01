@@ -15,6 +15,14 @@ body {
 	margin: 0;
 }
 
+::selection {
+	background-color: rgba(0,0,0,.1);
+}
+
+::-moz-selection {
+	background-color: rgba(0,0,0,.1);
+}
+
 
 /* 
 	----- HTML5 
@@ -75,6 +83,44 @@ h6 {
 	font-size: 1.2em;
 }
 
+.titulo-1,
+.titulo-2,
+.titulo-3 {
+	color: #a0a0a0;
+	font-weight: 300;
+}
+
+.titulo-1 {
+	font-size: 4em;
+	text-align: center;
+
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+
+	border-bottom: solid 1px #e6e6e6;
+}
+
+.titulo-2 {
+	font-size: 2.4em;
+}
+
+.titulo-3 {
+	font-size: 1.6em;
+}
+
+
+/* 
+	----- Parágrafo
+*/
+
+p {
+	color: #a0a0a0;
+	font-size: 1.6em;
+
+	line-height: 30px;
+}
+
+
 
 /* 
 	----- Grids
@@ -106,11 +152,11 @@ h6 {
 }
 
 .coluna-1 {
-	width: 8.33333%;
+	width: 8.333333333%;
 }
 
 .coluna-2 {
-	width: 16.66666%;
+	width: 16.666666666%;
 }
 
 .coluna-3 {
@@ -118,11 +164,11 @@ h6 {
 }
 
 .coluna-4 {
-	width: 33.33333%;
+	width: 33.333333333%;
 }
 
 .coluna-5 {
-	width: 41.66666%;
+	width: 41.666666666%;
 }
 
 .coluna-6 {
@@ -130,11 +176,11 @@ h6 {
 }
 
 .coluna-7 {
-	width: 58.33333%;
+	width: 58.333333333%;
 }
 
 .coluna-8 {
-	width: 66.66666%;
+	width: 66.666666666%;
 }
 
 .coluna-9 {
@@ -142,11 +188,11 @@ h6 {
 }
 
 .coluna-10 {
-	width: 83.33333%;
+	width: 83.333333333%;
 }
 
 .coluna-11 {
-	width: 91.66666%;
+	width: 91.666666666%;
 }
 
 .coluna-12 {
@@ -220,16 +266,62 @@ h6 {
 }
 
 .header-lateral nav a:hover:after {
-	content: "";
+	content: "\f105";
 	position: absolute;
 	top: 14px;
 	right: 10px;
 	
 	display: block;
-	padding: 10px;
+	width: 20px;
+	line-height: 20px;
+	height: 20px;
+
+	font-family: FontAwesome;
+	font-size: .8em;
+	text-align: center;
 
 	border-radius: 100%;
 	background-color: rgb(55, 83, 94);
 }
 
 
+/* 
+	----- Principal
+*/
+
+main {
+	padding-top: 40px;
+	border: solid 1px #ccc;
+}
+
+section {
+	margin-bottom: 30px;
+}
+
+code {
+	display: inline-block;
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: .8em;
+
+	padding: 0 8px;
+
+	border: solid 1px #ddd;
+	border-radius: 2px;
+	background-color: #f2f2f2;
+}
+
+pre {
+	display: block;
+	width: 100%;
+}
+
+pre code {
+	display: block;
+	
+	color: #888;
+	font-size: 1.4em;
+	line-height: 22px;
+
+	padding: 20px 20px;
+}
