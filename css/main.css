@@ -1,28 +1,30 @@
+@charset "CP850";
 /*
 	IFMS User Interface
 	www.ifms.edu.br
 */
-
-
+/*
+	-------------------- Variáveis
+*/
 /*
 	-------------------- Reset
 */
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box; }
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 10px;
-
-	margin: 0;
-}
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  margin: 0; }
 
 ::selection {
-	background-color: rgba(0,0,0,.1);
-}
+  background-color: rgba(0, 0, 0, 0.1); }
 
 ::-moz-selection {
-	background-color: rgba(0,0,0,.1);
-}
-
+  background-color: rgba(0, 0, 0, 0.1); }
 
 /* 
 	----- HTML5 
@@ -33,295 +35,109 @@ header,
 hgroup,
 main,
 nav {
-	display: block;
-}
-
+  display: block; }
 
 /* 
 	----- Navegação
 */
-nav ol,
-nav ul {
-	padding: 0;
-}
-
+nav ol, nav ul {
+  padding: 0; }
 nav a {
-	display: block;
-	text-decoration: none;
-}
-
+  display: block;
+  text-decoration: none; }
 
 /* 
 	----- Títulos
 */
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 400;
-	margin: 0;
-}
+  font-weight: 600;
+  margin: 0 0 10px; }
 
 h1 {
-	font-size: 3em;
-}
+  font-size: 3em; }
 
 h2 {
-	font-size: 2.6em;
-}
+  font-size: 2.5em; }
 
 h3 {
-	font-size: 2em;
-}
+  font-size: 2em; }
 
 h4 {
-	font-size: 1.8em;
-}
+  font-size: 1.5em; }
 
 h5 {
-	font-size: 1.4em;
-}
+  font-size: 1em; }
 
 h6 {
-	font-size: 1.2em;
-}
-
-.titulo-1,
-.titulo-2,
-.titulo-3 {
-	color: #a0a0a0;
-	font-weight: 300;
-}
-
-.titulo-1 {
-	font-size: 4em;
-	text-align: center;
-
-	margin-bottom: 20px;
-	padding-bottom: 10px;
-
-	border-bottom: solid 1px #e6e6e6;
-}
-
-.titulo-2 {
-	font-size: 2.4em;
-}
-
-.titulo-3 {
-	font-size: 1.6em;
-}
-
+  font-size: 1em; }
 
 /* 
 	----- Parágrafo
 */
-
 p {
-	color: #a0a0a0;
-	font-size: 1.6em;
-
-	line-height: 30px;
-}
-
-
+  font-size: 1.4em;
+  line-height: 25px;
+  margin: 0 0 10px; }
 
 /* 
 	----- Grids
 */
-
 .linha {
-	width: 100%;
-	*zoom: 1;
-}
+  width: 100%; }
+  .linha [class*="coluna-"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #eee;
+    overflow: hidden; }
 
-.linha:before,
-.linha:after {
+@media screen and (min-width: 768px) {
+  .linha {
+    width: 100%;
+    *zoom: 1;
+    margin: 0 auto; }
+    .linha [class*="coluna-"] {
+      width: auto;
+      float: left; }
+    .linha [class*="coluna-"]:last-of-type {
+      float: right;
+      background-color: #ccc; }
+    .linha .coluna-1 {
+      width: 8.333333333%; }
+    .linha .coluna-2 {
+      width: 16.666666666%; }
+    .linha .coluna-3 {
+      width: 25%; }
+    .linha .coluna-4 {
+      width: 33.333333333%; }
+    .linha .coluna-5 {
+      width: 41.666666666%; }
+    .linha .coluna-6 {
+      width: 50%; }
+    .linha .coluna-7 {
+      width: 58.333333333%; }
+    .linha .coluna-8 {
+      width: 66.666666666%; }
+    .linha .coluna-9 {
+      width: 75%; }
+    .linha .coluna-10 {
+      width: 83.333333333%; }
+    .linha .coluna-11 {
+      width: 91.666666666%; }
+    .linha .coluna-12 {
+      width: 100%; }
+    .linha .coluna-centralizada {
+      float: none !important;
+      margin: 0 auto; }
+
+  .linha:before, .linha:after {
     content: " ";
-    display: table;
-}
+    display: table; }
 
-.linha:after {
-    clear: both;
-}
-
-.linha [class*="coluna-"] {
-	float: left;
-	padding: 20px;
-
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-.coluna-1 {
-	width: 8.333333333%;
-}
-
-.coluna-2 {
-	width: 16.666666666%;
-}
-
-.coluna-3 {
-	width: 25%;
-}
-
-.coluna-4 {
-	width: 33.333333333%;
-}
-
-.coluna-5 {
-	width: 41.666666666%;
-}
-
-.coluna-6 {
-	width: 50%;
-}
-
-.coluna-7 {
-	width: 58.333333333%;
-}
-
-.coluna-8 {
-	width: 66.666666666%;
-}
-
-.coluna-9 {
-	width: 75%;
-}
-
-.coluna-10 {
-	width: 83.333333333%;
-}
-
-.coluna-11 {
-	width: 91.666666666%;
-}
-
-.coluna-12 {
-	width: 100%;
-}
-
-.coluna-direita {
-	float: right !important;
-}
-
-.coluna-centralizada {
-	float: none !important;
-	margin: 0 auto;
-}
-
-
+  .linha:after {
+    clear: both; } }
+@media screen and (min-width: 1024px) {
+  .linha {
+    width: 960px; } }
 /*
 	-------------------- IFMS User Interface
 */
-
-
-/* 
-	----- Cabeçalho
-*/
-
-.header-lateral {
-	position: fixed;
-	top: 0;
-	left: 0;
-
-	height: 100%;
-
-	padding: 0 !important;
-
-	background-color: rgb(55, 83, 94);
-}
-
-.header-lateral hgroup {
-	padding: 20px;
-}
-
-.header-lateral h1 {
-	color: rgba(255, 255, 255, .8);
-	font-size: 3.5em;
-	font-weight: 600;
-}
-
-.header-lateral h2 {
-	color: rgba(255, 255, 255, .6);
-	font-size: 1.8em;
-	text-transform: lowercase;
-}
-
-.header-lateral nav li {
-	border-bottom: solid 1px rgba(255, 255, 255, .08);
-}
-
-.header-lateral nav li:first-child {
-	border-top: solid 1px rgba(255, 255, 255, .08);	
-}
-
-.header-lateral nav a {
-	position: relative;
-	color: rgba(255, 255, 255, .6);
-	font-size: 1.6em;
-	padding: 12px 20px;
-}
-
-.header-lateral nav a:hover {
-	background-color: rgb(72, 100, 111);
-}
-
-.header-lateral nav a:hover:after {
-	content: "\f105";
-	position: absolute;
-	top: 14px;
-	right: 10px;
-	
-	display: block;
-	width: 20px;
-	line-height: 20px;
-	height: 20px;
-
-	font-family: FontAwesome;
-	font-size: .8em;
-	text-align: center;
-
-	border-radius: 100%;
-	background-color: rgb(55, 83, 94);
-}
-
-
-/* 
-	----- Principal
-*/
-
-main {
-	padding-top: 40px;
-	border: solid 1px #ccc;
-}
-
-section {
-	margin-bottom: 30px;
-}
-
-code {
-	display: inline-block;
-
-	font-family: 'Open Sans', sans-serif;
-	font-size: .8em;
-
-	padding: 0 8px;
-
-	border: solid 1px #ddd;
-	border-radius: 2px;
-	background-color: #f2f2f2;
-}
-
-pre {
-	display: block;
-	width: 100%;
-}
-
-pre code {
-	display: block;
-	
-	color: #888;
-	font-size: 1.4em;
-	line-height: 22px;
-
-	padding: 20px 20px;
-}
