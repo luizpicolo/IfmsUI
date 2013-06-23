@@ -17,6 +17,7 @@ body {
 $color1: #50cabd;
 $color2: #383a47;
 $color3: #2d2f39;
+$color4: #837b7b;
 
 
 /*
@@ -126,18 +127,25 @@ nav {
     ----- Main (Conteudo Principal)
 */
 main {
-    padding: 0 70px 0 310px;
-    text-align: justify;
+    padding: 0 40px 0 270px;
     
     h1 {
         font-size: 40px;
         color: $color1;
         margin: 0;
         padding: 0;
-        text-align: center;
+    }
+    
+    h2 {
+        font-size: 25px;
+        color: $color1;
+        font-weight: 200;
+        margin: 0;
+        padding: 0; 
     }
     
     p {
-        font-size: 15px;     
+        font-size: 15px; 
+        color: $color4;
     }
 }
