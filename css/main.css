@@ -6,10 +6,10 @@ body {
   background-color: #eee; }
 
 /*
-  ----- Variáveis Sass
+    ----- Variáveis Sass
 */
 /*
-  ----- Header Lateral
+    ----- Header Lateral
 */
 header {
   position: absolute;
@@ -34,7 +34,7 @@ header {
   position: absolute;
   top: 0;
   left: 240px;
-  display: block;
+  display: none;
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -52,7 +52,7 @@ nav {
   display: block;
   position: absolute;
   top: 70px;
-  left: -10%;
+  left: 0;
   width: 240px;
   height: 100%;
   background-color: #383a47; }
@@ -81,3 +81,18 @@ nav {
     width: 16px !important;
     line-height: 50px !important;
     text-align: center; }
+
+/*
+    ----- Main (Conteudo Principal)
+*/
+main {
+  padding: 0 70px 0 310px;
+  text-align: justify; }
+  main h1 {
+    font-size: 40px;
+    color: #50cabd;
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+  main p {
+    font-size: 15px; }
