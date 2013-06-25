@@ -11,19 +11,20 @@
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/awesome.min.css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
         <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script> 
     </head>
 
     <body>
         <header>
-            <h1 class="logo"><abbr title="Instituto Federal de Mato Grosso do Sul">IFMS</abbr>UI</h1>
-            <a id="nav-btn" href="#"><i class="icon-reorder"></i></a>
+            <h1>
+                <a href="?pag=principal" class="logo"><abbr title="Instituto Federal de Mato Grosso do Sul">IFMS</abbr>UI</a>
+            </h1>
         </header>
 
-        <nav id="nav">
+        <nav>
             <ul>
                 <li><a href="index.php?pag=sobre">Sobre <i class="icon-code"></i></a></li>
                 <li><a href="index.php?pag=grids">Grids <i class="icon-puzzle-piece"></i></a></li>
@@ -34,15 +35,15 @@
             </ul>
         </nav>
 
-    <main>
-        <?php
-            !isset($_GET["pag"]) ? include("inc/principal.php") : include("inc/".$_GET["pag"] . ".php");
-        ?>
-    </main>
+        <main>
+            <?php
+                !isset($_GET["pag"]) ? include("inc/principal.php") : include("inc/".$_GET["pag"] . ".php");
+            ?>
+        </main>
 
-    <!-- -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-</body>
+        <!-- Javascript -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
