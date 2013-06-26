@@ -204,13 +204,14 @@ main {
 
 .tabela {
     width: 100%;
-    background-color: transparent;
-    border-collapse: collapse;
-    border-spacing: 0;
 }
 
 .tabela th {
     font-weight: bold;
+}
+
+.tabela thead th {
+    border-top: none;
 }
 
 .tabela th, .tabela td {
