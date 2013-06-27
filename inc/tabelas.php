@@ -49,9 +49,19 @@
                 </tr>
             </tbody>
         </table>
-        <code>
-            Aqui vai o código fonte
-        </code>
+    </div>
+    <div class="exemplo">
+<pre class="prettyprint">
+&lt;div class="control-group"&gt;
+  &lt;label class="control-label" for="inputIcon"&gt;Email address&lt;/label&gt;
+  &lt;div class="controls"&gt;
+    &lt;div class="input-prepend"&gt;
+      &lt;span class="add-on"&gt;&lt;i class="icon-envelope"&gt;&lt;/i&gt;&lt;/span&gt;
+      &lt;input class="span2" id="inputIcon" type="text"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
     </div>
 
     <h2>Tabela Padrão com Bordas</h2>
@@ -100,7 +110,7 @@
             Aqui vai o código fonte
         </code>
     </div>
-    
+
     <h2>Tabela Zebrada</h2>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus nisi vitae sapien fringilla laoreet. Suspendisse potenti. Vestibulum vel accumsan mi. Suspendisse potenti. Suspendisse facilisis sed augue non pharetra. 
