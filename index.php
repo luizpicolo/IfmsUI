@@ -22,28 +22,28 @@
             <h1>
                 <a href="?pag=principal" class="logo"><abbr title="Instituto Federal de Mato Grosso do Sul">IFMS</abbr>UI</a>
             </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.php?pag=sobre">Sobre <i class="icon-code"></i></a></li>
+                    <li><a href="index.php?pag=grids">Grids <i class="icon-puzzle-piece"></i></a></li>
+                    <li><a href="index.php?pag=formularios">Formulários <i class="icon-list-alt"></i></a></li>
+                    <li><a href="index.php?pag=botoes">Botões <i class="icon-check"></i></a></li>
+                    <li><a href="index.php?pag=tabelas">Tabelas <i class="icon-table"></i></a></li>
+                    <li><a href="index.php?pag=menus">Menus <i class="icon-reorder"></i></a></li>
+                </ul>
+            </nav>
         </header>
 
-        <nav>
-            <ul>
-                <li><a href="index.php?pag=sobre">Sobre <i class="icon-code"></i></a></li>
-                <li><a href="index.php?pag=grids">Grids <i class="icon-puzzle-piece"></i></a></li>
-                <li><a href="index.php?pag=formularios">Formulários <i class="icon-list-alt"></i></a></li>
-                <li><a href="index.php?pag=botoes">Botões <i class="icon-check"></i></a></li>
-                <li><a href="index.php?pag=tabelas">Tabelas <i class="icon-table"></i></a></li>
-                <li><a href="index.php?pag=menus">Menus <i class="icon-reorder"></i></a></li>
-            </ul>
-        </nav>
+    <main>
+        <?php
+        !isset($_GET["pag"]) ? include("inc/principal.php") : include("inc/" . $_GET["pag"] . ".php");
+        ?>
+    </main>
 
-        <main>
-            <?php
-                !isset($_GET["pag"]) ? include("inc/principal.php") : include("inc/".$_GET["pag"] . ".php");
-            ?>
-        </main>
-
-        <!-- Javascript -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+    <!-- Javascript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
