@@ -11,6 +11,12 @@ body {
   padding: 0;
   background-color: #f5f5f5; }
 
+.prettyprint {
+  padding: 8px;
+  background-color: #f7f7f9;
+  border: 1px solid #fff !important;
+  font-size: 1.5em; }
+
 /*
     ----- Variáveis Sass
 */
@@ -121,10 +127,13 @@ main {
     display: block;
     margin: 20px 0 0; }
 
+/*
+    ----- Espaço para exemplos
+*/
 .exemplo {
   margin: 0 0 20px;
   position: relative;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   padding: 40px 20px 20px; }
 
 .exemplo:after {
@@ -143,25 +152,70 @@ main {
     ----- Tabelas
 */
 .tabela {
-  width: 100%;
-  background-color: transparent;
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-.tabela th {
-  font-weight: bold; }
-
-.tabela th, .tabela td {
-  padding: 8px;
-  line-height: 20px;
-  text-align: left;
-  vertical-align: top;
-  border-top: 1px solid #dddddd;
-  font-size: 15px; }
+  width: 100%; }
+  .tabela th, .tabela td {
+    padding: 8px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #dddddd;
+    font-size: 15px;
+    vertical-align: middle; }
+  .tabela th {
+    font-weight: bold; }
+  .tabela thead th {
+    border-top: none; }
 
 .bordar-tabela {
   border: 1px solid #dddddd;
-  border-collapse: separate;
+  border-collapse: collapse;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px; }
+
+.bordar-tabela th, .bordar-tabela tr, .bordar-tabela td {
+  border-left: 1px solid #dddddd; }
+
+.tabela-zebrada tbody tr:nth-child(odd) {
+  background-color: #dddddd;
+  border-left: 1px solid #dddddd; }
+
+/*
+    ----- Botões
+*/
+.botao {
+  padding: 8px;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  border-radius: 4px; }
+
+.botao:active {
+  border: 1px solid #999;
+  border-radius: 4px; }
+
+.botao-sucesso {
+  border: 1px solid #ddd;
+  background-color: #5db95d;
+  color: #ffffff; }
+
+.botao-sucesso:active {
+  border: 1px solid #999;
+  border-radius: 2px; }
+
+.botao-erro {
+  border: 1px solid #ddd;
+  background-color: #e1544f;
+  color: #ffffff; }
+
+.botao-erro:active {
+  border: 1px solid #999;
+  border-radius: 2px; }
+
+.botao-informacao {
+  border: 1px solid #ddd;
+  background-color: #4db3d1;
+  color: #ffffff; }
+
+.botao-informacao:active {
+  border: 1px solid #999;
+  border-radius: 2px; }
