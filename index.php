@@ -42,6 +42,7 @@
     </main>
 
     <!-- Javascript -->
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=html"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
