@@ -1,6 +1,6 @@
 <section>
     <hgroup>
-        <h1>Grids Responsivos</h1>
+        <h1>Tabelas Responsivas</h1>
         <h2>orem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus nisi vitae sapien fringilla laoreet</h2>
     </hgroup>
     <p>
