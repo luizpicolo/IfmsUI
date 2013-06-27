@@ -12,7 +12,12 @@ body {
     background-color: #f5f5f5;
 }
 
-
+.prettyprint {
+  padding: 8px;
+  background-color: #f7f7f9;
+  border: 1px solid #fff !important;
+  font-size: 1.5em;
+}
 /*
     ----- Variáveis Sass
 */
@@ -22,7 +27,8 @@ $color2: #383a47;
 $color3: #2d2f39;
 
 // Cores para a tabela
-$bordas-tabela: #dddddd;
+$borda-tabela: #dddddd;
+$background-tabela-zebrada: #dddddd;
 
 
 /*
@@ -176,26 +182,30 @@ main {
         display: block;
         margin: 20px 0 0;
     }
-    
-    .exemplo {
-        margin: 0 0 20px;
-        position: relative;
-        border: 1px solid $bordas-tabela;
-        padding: 40px 20px 20px;
-    }
-    
-    .exemplo:after {
-        content: "Exemplo e Código";
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 3px 7px;
-        font-size: 12px;
-        font-weight: bold;
-        background-color: #f5f5f5;
-        border: 1px solid #ddd;
-        color: #9da0a4;
-    }
+}
+
+/*
+    ----- Espaço para exemplos
+*/
+
+.exemplo {
+    margin: 0 0 20px;
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 40px 20px 20px;
+}
+
+.exemplo:after {
+    content: "Exemplo e Código";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #9da0a4;
 }
 
 /*
@@ -210,8 +220,9 @@ main {
         line-height: 20px;
         text-align: left;
         vertical-align: top;
-        border-top: 1px solid $bordas-tabela;
+        border-top: 1px solid $borda-tabela;
         font-size: 15px;
+        vertical-align: middle;
     }
     
     th {
@@ -224,14 +235,77 @@ main {
 }
 
 .bordar-tabela {
-    border: 1px solid $bordas-tabela;
-    border-collapse: separate;
+    border: 1px solid $borda-tabela;
+    border-collapse: collapse;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
 
-.tabela-zebrada tbody tr:nth-child(odd) {
-    background-color: $bordas-tabela;
-    border-color: $bordas-tabela;
+.bordar-tabela {
+    
+    th, tr, td {
+        border-left: 1px solid $borda-tabela;
+    }
+}
+
+.tabela-zebrada { 
+    
+    tbody {
+        
+        tr:nth-child(odd) {
+            background-color: $background-tabela-zebrada;
+            border-left: 1px solid $borda-tabela;
+        }
+        
+    }
+    
+}
+
+/*
+    ----- Botões
+*/
+.botao {
+    padding: 8px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.botao:active {
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.botao-sucesso {
+    border: 1px solid #ddd;
+    background-color: #5db95d;
+    color: #ffffff;
+}
+
+.botao-sucesso:active {
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+.botao-erro {
+    border: 1px solid #ddd;
+    background-color: #e1544f;
+    color: #ffffff;
+}
+
+.botao-erro:active {
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+.botao-informacao {
+    border: 1px solid #ddd;
+    background-color: #4db3d1;
+    color: #ffffff;
+}
+
+.botao-informacao:active {
+    border: 1px solid #999;
+    border-radius: 2px;
 }
