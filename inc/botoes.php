@@ -100,30 +100,30 @@
             Configurações
         </button>    
     </div>
-<div class="exemplo">
+    <div class="exemplo">
 <pre class="prettyprint">
 &lt;button type="button" class="botao botao-extra-pequeno">
-    &lt;i class="icon-smile">&gt;/i>
+    &lt;i class="icon-smile"&gt;&lt;/i&gt;
     Carinha Feliz
 &lt;/button>
 
 &lt;button type="button" class="botao botao-pequeno">
-    &lt;i class="icon-remove">&gt;/i>
+    &lt;i class="icon-remove"&gt;&lt;/i&gt;
     Excluir
 &lt;/button>
 
 &lt;button type="button" class="botao">
-    &lt;i class="icon-music">&gt;/i>
+    &lt;i class="icon-music"&gt;&lt;/i&gt;
     Música
 &lt;/button>
 
 &lt;button type="button" class="botao botao-largo">
-    &lt;i class="icon-edit">&gt;/i>
+    &lt;i class="icon-edit"&gt;&lt;/i&gt;
     Editar
 &lt;/button>
 
 &lt;button type="button" class="botao botao-extra-largo">
-    &lt;i class="icon-cog">&gt;/i>
+    &lt;i class="icon-cog"&gt;&lt;/i&gt;
     Configurações
 &lt;/button> 
 </pre>
