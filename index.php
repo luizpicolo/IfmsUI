@@ -31,13 +31,14 @@
                     <li><a href="index.php?pag=botoes">Botões <i class="icon-check"></i></a></li>
                     <li><a href="index.php?pag=tabelas">Tabelas <i class="icon-table"></i></a></li>
                     <li><a href="index.php?pag=menus">Menus <i class="icon-reorder"></i></a></li>
+                    <li><a href="index.php?pag=paginacao">Paginação <i class="icon-chevron-sign-right"></i></a></li>
                 </ul>
             </nav>
         </header>
 
     <main>
         <?php
-        !isset($_GET["pag"]) ? include("inc/principal.php") : include("inc/" . $_GET["pag"] . ".php");
+            !isset($_GET["pag"]) ? include("inc/principal.php") : include("inc/" . $_GET["pag"] . ".php");
         ?>
     </main>
 
