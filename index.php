@@ -32,6 +32,7 @@
                     <li><a href="index.php?pag=tabelas">Tabelas <i class="icon-table"></i></a></li>
                     <li><a href="index.php?pag=menus">Menus <i class="icon-reorder"></i></a></li>
                     <li><a href="index.php?pag=paginacao">Paginação <i class="icon-chevron-sign-right"></i></a></li>
+                    <li><a href="index.php?pag=alertas">Alertas <i class="icon-chevron-sign-right"></i></a></li>
                 </ul>
             </nav>
         </header>
@@ -44,7 +45,7 @@
 
     <!-- Javascript -->
     <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=html"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 </body>
