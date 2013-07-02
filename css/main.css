@@ -264,3 +264,31 @@ main {
 
 .paginacao-direita {
   text-align: right; }
+
+/*
+    ----- Alertas
+*/
+.alerta {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 1.5em; }
+  .alerta .fechar {
+    position: relative;
+    top: 50%;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+    opacity: 0.2;
+    padding: 0;
+    cursor: pointer; }
+
+.alerta-aviso {
+  background-color: #fcf8e3; }
+
+.alerta-erro {
+  background-color: #dba1a1; }
+
+.alerta-sucesso {
+  background-color: #dff0d8; }
