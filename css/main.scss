@@ -18,6 +18,21 @@ body {
     border: 1px solid #fff !important;
     font-size: 1.5em;
 }
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
 /*
     ----- Variáveis Sass
 */
@@ -408,4 +423,19 @@ main {
 
 .alerta-sucesso {
     background-color: #dff0d8;
+}
+
+/*
+    ----- Grades
+*/
+$maxGrid: 12;
+$minGrid: 100% / $maxGrid;
+
+@for $i from 1 through $maxGrid {
+  .grade-#{$i} { 
+        width: $minGrid * $i;
+        float: left; 
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
 }
