@@ -13,10 +13,10 @@ body {
 }
 
 .prettyprint {
+    padding: 8px;
+    background-color: #f7f7f9;
+    border: 1px solid #fff !important;
     font-size: 1.5em;
-    padding: 10px 8px;
-    border: 1px solid #ccc !important;
-    background-color: #f2f2f2;
 }
 
 .clearfix:before,
@@ -204,85 +204,24 @@ main {
 */
 
 .exemplo {
-    position: relative;
-
     margin: 0 0 20px;
+    position: relative;
+    border: 1px solid #ddd;
     padding: 40px 20px 20px;
-
-    border: 1px solid #ccc;
 }
 
 .exemplo:after {
     content: "Exemplo e Código";
     position: absolute;
     top: 0;
-    left: 0;   
-    
-    color: #999;
+    left: 0;
+    padding: 3px 7px;
     font-size: 12px;
     font-weight: bold;
-
-    padding: 3px 7px;
-    
-    border-right: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    background-color: #f5f5f5;   
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    color: #9da0a4;
 }
-
-
-
-
-
-/*
-    ----- Grade Responsiva
-*/
-
-// Lembrete, aumentar a precisão: Sass::Script::Number.precision = 10
-
-.linha {
-    width: 100%;
-    margin-bottom: 10px;
-    *zoom: 1;
-
-    &:before,
-    &:after {
-      content: "";
-      display: table;
-    }
-
-    &:after {
-      clear: both;
-    }
-}
-
-$colunas: 12;
-$coluna-unidade: 100% / $colunas;
-$coluna-padding: 10px;
-
-@for $i from 1 through $colunas {
-  .coluna-#{$i} {
-        float: left;
-        width: $coluna-unidade * $i;
-        padding: $coluna-padding;
-
-        border: solid 1px #ccc;
-    }
-}
-
-[class*="coluna-"]:last-of-type {
-    float: right;
-}
-
-.coluna-centralizada {
-    float: none !important;
-    margin: 0 auto !important;
-}
-
-
-
-
-
-
 
 /*
     ----- Tabelas
@@ -451,7 +390,6 @@ $coluna-padding: 10px;
     text-align: right;
 }
 
-
 /*
     ----- Alertas
 */
@@ -487,5 +425,17 @@ $coluna-padding: 10px;
     background-color: #dff0d8;
 }
 
+/*
+    ----- Grades
+*/
+$maxGrid: 12;
+$minGrid: 100% / $maxGrid;
 
-
+@for $i from 1 through $maxGrid {
+  .grade-#{$i} { 
+        width: $minGrid * $i;
+        float: left; 
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+}
