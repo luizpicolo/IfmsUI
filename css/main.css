@@ -17,17 +17,6 @@ body {
   border: 1px solid #fff !important;
   font-size: 1.5em; }
 
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table; }
-
-.clearfix {
-  *zoom: 1; }
-
-.clearfix:after {
-  clear: both; }
-
 /*
     ----- Variáveis Sass
 */
@@ -303,78 +292,3 @@ main {
 
 .alerta-sucesso {
   background-color: #dff0d8; }
-
-/*
-    ----- Grades
-*/
-.grade-1 {
-  width: 8.33333%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 10px; }
-
-.grade-2 {
-  width: 16.66667%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 10px; }
-
-.grade-3 {
-  width: 25%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 10px; }
-
-.grade-4 {
-  width: 33.33333%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 10px; }
-
-.grade-5 {
-  width: 41.66667%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 10px; }
-
-.grade-6 {
-  width: 50%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 10px; }
-
-.grade-7 {
-  width: 58.33333%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 10px; }
-
-.grade-8 {
-  width: 66.66667%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 10px; }
-
-.grade-9 {
-  width: 75%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 10px; }
-
-.grade-10 {
-  width: 83.33333%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 10px; }
-
-.grade-11 {
-  width: 91.66667%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 10px; }
-
-.grade-12 {
-  width: 100%;
-  float: left;
-  border: 1px solid #ddd;
-  padding: 10px; }
