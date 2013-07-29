@@ -1,0 +1,53 @@
+/*
+    ----- Tabelas
+*/
+
+.tabela {
+    width: 100%;
+    
+    th, td { 
+        padding: 8px;
+        line-height: 20px;
+        text-align: left;
+        vertical-align: top;
+        border-top: 1px solid $borda-tabela;
+        font-size: 15px;
+        vertical-align: middle;
+    }
+    
+    th {
+        font-weight: bold;
+    }
+    
+    thead th {
+        border-top: none;
+    }
+}
+
+.bordar-tabela {
+    border: 1px solid $borda-tabela;
+    border-collapse: collapse;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.bordar-tabela {
+    
+    th, tr, td {
+        border-left: 1px solid $borda-tabela;
+    }
+}
+
+.tabela-zebrada { 
+    
+    tbody {
+        
+        tr:nth-child(odd) {
+            background-color: $background-tabela-zebrada;
+            border-left: 1px solid $borda-tabela;
+        }
+        
+    }
+    
+}
