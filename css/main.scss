@@ -1,4 +1,37 @@
-@import "estrutura";
+*, *::before, *::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.prettyprint {
+    font-size: 1.5em;
+    padding: 10px 8px;
+    border: 1px solid #ccc !important;
+    background-color: #f2f2f2;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+  clear: both;
+}
 
 /*
     ----- Variáveis Sass
@@ -9,13 +42,450 @@ $color2: #383a47;
 $color3: #2d2f39;
 
 // Cores para a tabela
-$borda-tabela: #ddd;
-$background-tabela-zebrada: #ddd;
+$borda-tabela: #dddddd;
+$background-tabela-zebrada: #dddddd;
 
-@import "grade";
-// @import "formulario";
-@import "botoes";
-@import "tabelas";
-// @import "menus";
-@import "paginacao";
-// @import "alertas";
+
+/*
+    ----- Header Lateral
+*/
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    width: 240px;
+    height: 100%;
+    
+    background-color: $color2;
+    
+    h1 {
+        font-size: 1em;
+        margin: 0;
+    }
+    
+    .logo {
+        display: block;
+        height: 90px;
+        line-height: 90px;
+        
+        color: #fff;
+        font-size: 3.6em;
+        font-weight: 300;
+        text-align: center;
+        text-decoration: none;        
+        
+        margin: 0;
+        background-color: $color1;
+        
+        abbr {
+            font-weight: 600;
+            text-transform: lowercase;
+        }
+    }
+}
+
+#nav-btn {
+    position: absolute;
+    top: 0;
+    left: 240px;
+    
+    display: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    
+    color: rgba(255, 255, 255, .6);
+    font-size: 1.4em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    background-color: $color2;
+}
+
+#nav-btn:hover {
+    background-color: $color3;
+}
+
+nav {   
+    background-color: $color2;
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }  
+    
+    li {
+        border-bottom: solid 1px rgba(255, 255, 255, .06);
+    }
+    
+    a {
+        position: relative;
+        display: block;
+        height: 50px;
+        line-height: 50px;
+        
+        color: rgba(255, 255, 255, .4);
+        font-size: 1.4em;
+        text-decoration: none;
+        
+        padding: 0 14px;
+    }
+    
+    a:hover {
+        color: rgba(255, 255, 255, .7);
+        background-color: $color3;
+    }
+    
+    i {
+        position: absolute;
+        right: 14px;
+        display: block;
+        width: 16px !important;
+        line-height: 50px !important;
+        text-align: center;
+    }
+}
+
+/*
+    ----- Main (Conteúdo Principal)
+*/
+main {
+    margin: 0 0 0 240px;
+    padding: 10px 20px;
+    
+    hgroup {
+        padding-bottom: 15px;
+        border-bottom: solid 1px rgba(0,0,0,.1);
+        
+        h1, h2 {
+            margin: 0;
+        }
+    }
+    
+    h1 {
+        color: $color1;
+        font-size: 3.6em;
+        font-weight: 600;
+        
+        margin: 0 0 10px;
+        padding: 0;
+    }
+    
+    h2 {
+        color: $color1;
+        font-size: 2em;
+        font-weight: 200;
+        
+        margin: 0 0 10px;
+        padding: 0; 
+    }
+    
+    p {
+        color: rgba(0,0,0,.5);
+        font-size: 1.4em;
+        font-weight: 600;
+        line-height: 26px;
+        
+        margin-bottom: 10px;
+    } 
+    
+    code {
+        display: block;
+        margin: 20px 0 0;
+    }
+}
+
+/*
+    ----- Espaço para exemplos
+*/
+
+.exemplo {
+    position: relative;
+
+    margin: 0 0 20px;
+    padding: 40px 20px 20px;
+
+    border: 1px solid #ccc;
+}
+
+.exemplo:after {
+    content: "Exemplo e Código";
+    position: absolute;
+    top: 0;
+    left: 0;   
+    
+    color: #999;
+    font-size: 12px;
+    font-weight: bold;
+
+    padding: 3px 7px;
+    
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #f5f5f5;   
+}
+
+
+
+
+
+/*
+    ----- Grade Responsiva
+*/
+
+// Lembrete, aumentar a precisão: Sass::Script::Number.precision = 10
+
+.linha {
+    width: 100%;
+    margin-bottom: 10px;
+    *zoom: 1;
+
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+}
+
+$colunas: 12;
+$coluna-unidade: 100% / $colunas;
+$coluna-padding: 10px;
+
+@for $i from 1 through $colunas {
+  .coluna-#{$i} {
+        float: left;
+        width: $coluna-unidade * $i;
+        padding: $coluna-padding;
+
+        border: solid 1px #ccc;
+    }
+}
+
+[class*="coluna-"]:last-of-type {
+    float: right;
+}
+
+.coluna-centralizada {
+    float: none !important;
+    margin: 0 auto !important;
+}
+
+
+
+
+
+
+
+/*
+    ----- Tabelas
+*/
+
+.tabela {
+    width: 100%;
+    
+    th, td { 
+        padding: 8px;
+        line-height: 20px;
+        text-align: left;
+        vertical-align: top;
+        border-top: 1px solid $borda-tabela;
+        font-size: 15px;
+        vertical-align: middle;
+    }
+    
+    th {
+        font-weight: bold;
+    }
+    
+    thead th {
+        border-top: none;
+    }
+}
+
+.bordar-tabela {
+    border: 1px solid $borda-tabela;
+    border-collapse: collapse;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.bordar-tabela {
+    
+    th, tr, td {
+        border-left: 1px solid $borda-tabela;
+    }
+}
+
+.tabela-zebrada { 
+    
+    tbody {
+        
+        tr:nth-child(odd) {
+            background-color: $background-tabela-zebrada;
+            border-left: 1px solid $borda-tabela;
+        }
+        
+    }
+    
+}
+
+/*
+    ----- Botões
+*/
+.botao {
+    padding: 8px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.botao:active {
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.botao-sucesso {
+    border: 1px solid #ddd;
+    background-color: #5db95d;
+    color: #ffffff;
+}
+
+.botao-sucesso:active {
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+.botao-erro {
+    border: 1px solid #ddd;
+    background-color: #e1544f;
+    color: #ffffff;
+}
+
+.botao-erro:active {
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+.botao-informacao {
+    border: 1px solid #ddd;
+    background-color: #4db3d1;
+    color: #ffffff;
+}
+
+.botao-informacao:active {
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+.botao-extra-pequeno {
+    padding: 4px 6px;
+    font-size: 1em;
+}
+
+.botao-pequeno {
+    padding: 6px;
+}
+
+.botao-largo {
+    padding: 10px;
+    font-size: 1.7em;
+}
+
+.botao-extra-largo {
+    padding: 12px; 
+    font-size: 2em;
+}
+
+/*
+    ----- Paginação
+*/
+
+.paginacao { 
+    
+    ul {
+        margin-bottom: 0;
+        margin-left: 0s;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    a {
+        display: block;
+        line-height: 30px;
+        padding: 1px 10px;
+        color: #fff;
+        font-size: 1.3em;
+        text-align: center;
+        text-decoration: none;
+        
+        background-color: $color1;
+        border-radius: 4px;
+    }
+    
+    a:hover,
+    a.ativa {
+        background-color: $color2;
+    }
+    
+    a.ativa {
+        cursor: default;
+    }
+}
+
+.paginacao-centro {
+    text-align: center;
+}
+
+.paginacao-direita {
+    text-align: right;
+}
+
+
+/*
+    ----- Alertas
+*/
+.alerta {
+    
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 1.5em;
+    
+    .fechar {
+        position: relative;
+        top: 50%;
+        float: right;
+        font-size: 15px;
+        font-weight: bold;
+        color: #000000;
+        opacity: 0.2;
+        padding: 0;
+        cursor: pointer;
+    }
+}
+
+.alerta-aviso {
+    background-color: #fcf8e3;
+}
+
+.alerta-erro {
+    background-color: #dba1a1;
+}
+
+.alerta-sucesso {
+    background-color: #dff0d8;
+}
+
+
+
