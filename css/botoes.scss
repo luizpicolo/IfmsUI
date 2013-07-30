@@ -1,0 +1,67 @@
+/*
+    ----- Botões
+*/
+
+.botao {
+    padding: 8px;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.botao:active {
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+.botao-sucesso {
+    border: 1px solid #ddd;
+    background-color: #5db95d;
+    color: #ffffff;
+}
+
+.botao-sucesso:active {
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+.botao-erro {
+    border: 1px solid #ddd;
+    background-color: #e1544f;
+    color: #ffffff;
+}
+
+.botao-erro:active {
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+.botao-informacao {
+    border: 1px solid #ddd;
+    background-color: #4db3d1;
+    color: #ffffff;
+}
+
+.botao-informacao:active {
+    border: 1px solid #999;
+    border-radius: 2px;
+}
+
+.botao-extra-pequeno {
+    padding: 4px 6px;
+    font-size: 1em;
+}
+
+.botao-pequeno {
+    padding: 6px;
+}
+
+.botao-largo {
+    padding: 10px;
+    font-size: 1.7em;
+}
+
+.botao-extra-largo {
+    padding: 12px; 
+    font-size: 2em;
+}

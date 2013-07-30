@@ -1,0 +1,45 @@
+/*
+    ----- Paginação
+*/
+
+.paginacao { 
+    
+    ul {
+        margin-bottom: 0;
+        margin-left: 0s;
+    }
+    
+    li {
+        display: inline-block;
+    }
+    
+    a {
+        display: block;
+        line-height: 30px;
+        padding: 1px 10px;
+        color: #fff;
+        font-size: 1.3em;
+        text-align: center;
+        text-decoration: none;
+        
+        background-color: $color1;
+        border-radius: 4px;
+    }
+    
+    a:hover,
+    a.ativa {
+        background-color: $color2;
+    }
+    
+    a.ativa {
+        cursor: default;
+    }
+}
+
+.paginacao-centro {
+    text-align: center;
+}
+
+.paginacao-direita {
+    text-align: right;
+}

@@ -1,0 +1,44 @@
+/*
+    ----- Grade Responsiva
+*/
+
+// Lembrete, aumentar a precisão: Sass::Script::Number.precision = 10
+
+.linha {
+    width: 100%;
+    margin-bottom: 10px;
+    *zoom: 1;
+
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+}
+
+$colunas: 12;
+$coluna-unidade: 100% / $colunas;
+$coluna-padding: 10px;
+
+@for $i from 1 through $colunas {
+  .coluna-#{$i} {
+        float: left;
+        width: $coluna-unidade * $i;
+        padding: $coluna-padding;
+
+		border: solid 1px #ccc;
+    }
+}
+
+[class*="coluna-"]:last-of-type {
+    float: right;
+}
+
+.coluna-centralizada {
+    float: none !important;
+    margin: 0 auto !important;
+}
