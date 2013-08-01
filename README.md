@@ -8,5 +8,6 @@ facilidade do uso e os princípios básicos de usabilidade.</p>
 <p>Contribuir, com uma base de componentes gráficos, para a elaboração de interfaces Web, facilitando assim, a criação 
 de futuros sistemas desenvolvidos pelos alunos.</p>
 <h2>Demostração</h2>
+<p>Para demostração acesse:</p>
 <p>http://ifmsui.herokuapp.com</p>
 
