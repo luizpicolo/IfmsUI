@@ -13,21 +13,20 @@
     </p>
 
     <div class="exemplo">
-       <div class="paginacao">
-          <ul>
-            <li><a href="#">Anterior</a></li>
-            <li><a href="#" class="ativa">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">Próximo</a></li>
-          </ul>
+        <div class="paginacao">
+            <ul>
+                <li><a href="#">Anterior</a></li>
+                <li><a href="#" class="ativa">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">Próximo</a></li>
+            </ul>
         </div>
-    </div>
-    <div class="exemplo">
-<pre class="prettyprint">
+
+        <pre class="prettyprint">
 &lt;div class="paginacao"&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="#"&gt;Anterior&lt;/a&gt;&lt;/li&gt;
@@ -40,100 +39,98 @@
         &lt;li&gt;&lt;a href="#"&gt;Próximo&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
-</pre>
+        </pre>
     </div>
-    
+
     <h2>Alinhamento Paginação</h2>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus nisi vitae sapien fringilla laoreet. Suspendisse potenti. Vestibulum vel accumsan mi. Suspendisse potenti. Suspendisse facilisis sed augue non pharetra. 
     </p>
 
     <div class="exemplo">
-       <div class="paginacao">
-          <ul>
-            <li><a href="#">Anterior</a></li>
-            <li><a href="#" class="ativa">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">Próximo</a></li>
-          </ul>
+        <div class="paginacao">
+            <ul>
+                <li><a href="#">Anterior</a></li>
+                <li><a href="#" class="ativa">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">Próximo</a></li>
+            </ul>
         </div>
         <div class="paginacao paginacao-centro">
-          <ul>
-            <li><a href="#">Anterior</a></li>
-            <li><a href="#" class="ativa">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">Próximo</a></li>
-          </ul>
+            <ul>
+                <li><a href="#">Anterior</a></li>
+                <li><a href="#" class="ativa">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">Próximo</a></li>
+            </ul>
         </div>
         <div class="paginacao paginacao-direita">
-          <ul>
-            <li><a href="#">Anterior</a></li>
-            <li><a href="#" class="ativa">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#">Próximo</a></li>
-          </ul>
+            <ul>
+                <li><a href="#">Anterior</a></li>
+                <li><a href="#" class="ativa">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">Próximo</a></li>
+            </ul>
         </div>
-    </div>
-    <div class="exemplo">
-<pre class="prettyprint">
+
+        <pre class="prettyprint">
 &lt;!-- Paginação Alinhada a esquerda --&gt;
 &lt;div class="paginacao"&gt;
     &lt;ul&gt;
         ...
     &lt;/ul&gt;
 &lt;/div&gt;
-</pre> 
-<pre class="prettyprint">
+        </pre> 
+        <pre class="prettyprint">
 &lt;!-- Paginação Alinhada ao Centro --&gt;
 &lt;div class="paginacao paginacao-centro"&gt;
     &lt;ul&gt;
         ...
     &lt;/ul&gt;
 &lt;/div&gt;
-</pre>
-<pre class="prettyprint">
+        </pre>
+        <pre class="prettyprint">
 &lt;!-- Paginação Alinhada a Direita --&gt;
 &lt;div class="paginacao paginacao-direita"&gt;
     &lt;ul&gt;
         ...
     &lt;/ul&gt;
 &lt;/div&gt;
-</pre>
+        </pre>
     </div>
-    
+
     <h2>Paginação com Icones</h2>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus nisi vitae sapien fringilla laoreet. Suspendisse potenti. Vestibulum vel accumsan mi. Suspendisse potenti. Suspendisse facilisis sed augue non pharetra. 
     </p>
 
     <div class="exemplo">
-       <div class="paginacao">
-          <ul>
-            <li><a href="#"><i class="icon-chevron-sign-left"></i></a></li>
-            <li><a href="#" class="ativa">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            <li><a href="#">6</a></li>
-            <li><a href="#"><i class="icon-chevron-sign-right"></i></a></li>
-          </ul>
+        <div class="paginacao">
+            <ul>
+                <li><a href="#"><i class="icon-chevron-sign-left"></i></a></li>
+                <li><a href="#" class="ativa">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#"><i class="icon-chevron-sign-right"></i></a></li>
+            </ul>
         </div>
-    </div>
-    <div class="exemplo">
-<pre class="prettyprint">
+
+        <pre class="prettyprint">
 &lt;div class="paginacao"&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-chevron-sign-left"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
@@ -146,6 +143,6 @@
         &lt;li&gt;&lt;a href="#"&gt;&lt;i class="icon-chevron-sign-right"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
-</pre> 
+        </pre> 
     </div>
 </section>

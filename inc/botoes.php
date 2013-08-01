@@ -44,14 +44,12 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div class="exemplo">
-<pre class="prettyprint">
+        <pre class="prettyprint">
 &lt;button type="button" class="botao"&gt;Botão Padrão&lt;/button&gt;
 &lt;button type="button" class="botao botao-sucesso"&gt;Botão Sucesso&lt;/button&gt;
 &lt;button type="button" class="botao botao-erro"&gt;Botão Erro&lt;/button&gt;
 &lt;button type="button" class="botao botao-informacao"&gt;Botão Informação&lt;/button&gt;
-</pre>
+        </pre>
     </div>
     <h2>Botões com tamanhos diferentes</h2>
     <p>
@@ -64,15 +62,13 @@
         <button type="button" class="botao">Botão Padrão</button>
         <button type="button" class="botao botao-largo">Botão Largo</button>
         <button type="button" class="botao botao-extra-largo">Botão Extra Largo</button>    
-    </div>
-    <div class="exemplo">
-<pre class="prettyprint">
+        <pre class="prettyprint">
 &lt;button type="button" class="botao botao-extra-pequeno"&gt;Botão Extra Pequenao&lt;/button&gt;
 &lt;button type="button" class="botao botao-pequeno"&gt;Botão Pequeno&lt;/button&gt;
 &lt;button type="button" class="botao"&gt;Botão Padrão&lt;/button&gt;
 &lt;button type="button" class="botao botao-largo"&gt;Botão Largo&lt;/button&gt;
 &lt;button type="button" class="botao botao-extra-largo"&gt;Botão Extra Largo&lt;/button&gt;    
-</pre>
+        </pre>
     </div>
     <h2>Botões com ícones</h2>
     <p>
@@ -99,9 +95,7 @@
             <i class="icon-cog"></i>
             Configurações
         </button>    
-    </div>
-    <div class="exemplo">
-<pre class="prettyprint">
+        <pre class="prettyprint">
 &lt;button type="button" class="botao botao-extra-pequeno">
     &lt;i class="icon-smile"&gt;&lt;/i&gt;
     Carinha Feliz
@@ -126,6 +120,6 @@
     &lt;i class="icon-cog"&gt;&lt;/i&gt;
     Configurações
 &lt;/button> 
-</pre>
+        </pre>
     </div>
 </section>

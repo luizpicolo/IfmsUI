@@ -47,40 +47,39 @@
         </div>
 
         <pre class="prettyprint">
+&lt;div class="linha"&gt;
+    &lt;div class="coluna-12"&gt;12&lt;/div&gt;
+&lt;/div&gt;
 
-    &lt;div class="linha"&gt;
-        &lt;div class="coluna-12"&gt;12&lt;/div&gt;
-    &lt;/div&gt;
+&lt;div class="linha"&gt;
+    &lt;div class="coluna-11"&gt;11&lt;/div&gt;
+    &lt;div class="coluna-1"&gt;1&lt;/div&gt;
+&lt;/div&gt;
 
-    &lt;div class="linha"&gt;
-        &lt;div class="coluna-11"&gt;11&lt;/div&gt;
-        &lt;div class="coluna-1"&gt;1&lt;/div&gt;
-    &lt;/div&gt;
+&lt;div class="linha"&gt;
+    &lt;div class="coluna-10"&gt;10&lt;/div&gt;
+    &lt;div class="coluna-2"&gt;2&lt;/div&gt;
+&lt;/div&gt;
 
-    &lt;div class="linha"&gt;
-        &lt;div class="coluna-10"&gt;10&lt;/div&gt;
-        &lt;div class="coluna-2"&gt;2&lt;/div&gt;
-    &lt;/div&gt;
+&lt;div class="linha"&gt;
+    &lt;div class="coluna-9"&gt;9&lt;/div&gt;
+    &lt;div class="coluna-3"&gt;3&lt;/div&gt;
+&lt;/div&gt;
 
-    &lt;div class="linha"&gt;
-        &lt;div class="coluna-9"&gt;9&lt;/div&gt;
-        &lt;div class="coluna-3"&gt;3&lt;/div&gt;
-    &lt;/div&gt;
+&lt;div class="linha"&gt;
+    &lt;div class="coluna-8"&gt;8&lt;/div&gt;
+    &lt;div class="coluna-4"&gt;4&lt;/div&gt;
+&lt;/div&gt;
 
-    &lt;div class="linha"&gt;
-        &lt;div class="coluna-8"&gt;8&lt;/div&gt;
-        &lt;div class="coluna-4"&gt;4&lt;/div&gt;
-    &lt;/div&gt;
+&lt;div class="linha"&gt;
+    &lt;div class="coluna-7"&gt;7&lt;/div&gt;
+    &lt;div class="coluna-5"&gt;5&lt;/div&gt;
+&lt;/div&gt;
 
-    &lt;div class="linha"&gt;
-        &lt;div class="coluna-7"&gt;7&lt;/div&gt;
-        &lt;div class="coluna-5"&gt;5&lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class="linha"&gt;
-        &lt;div class="coluna-6"&gt;6&lt;/div&gt;
-        &lt;div class="coluna-6"&gt;6&lt;/div&gt;
-    &lt;/div&gt;
+&lt;div class="linha"&gt;
+    &lt;div class="coluna-6"&gt;6&lt;/div&gt;
+    &lt;div class="coluna-6"&gt;6&lt;/div&gt;
+&lt;/div&gt;
         </pre>
     </div>
 
@@ -103,19 +102,18 @@
 
 
         <pre class="prettyprint">
+&lt;div class="linha"&gt;
+   &lt;div class="coluna-12"&gt;Topo&lt;/div&gt;
+&lt;/div&gt;
 
-    &lt;div class="linha"&gt;
-        &lt;div class="coluna-12"&gt;Topo&lt;/div&gt;
-    &lt;/div&gt;
+&lt;div class="linha"&gt;
+   &lt;div class="coluna-3"&gt;Navegação Lateral&lt;/div&gt;
+   &lt;div class="coluna-9"&gt;Principal&lt;/div&gt;
+&lt;/div&gt;
 
-    &lt;div class="linha"&gt;
-        &lt;div class="coluna-3"&gt;Navegação Lateral&lt;/div&gt;
-        &lt;div class="coluna-9"&gt;Principal&lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class="linha"&gt;
-        &lt;div class="coluna-12"&gt;Rodapé&lt;/div&gt;
-    &lt;/div&gt;
+&lt;div class="linha"&gt;
+   &lt;div class="coluna-12"&gt;Rodapé&lt;/div&gt;
+&lt;/div&gt;
         </pre>
     </div>
 </section>

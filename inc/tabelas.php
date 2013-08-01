@@ -49,8 +49,7 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div class="exemplo">
+
         <pre class="prettyprint">
 &lt;table class="tabela"&gt;
     ...
@@ -100,8 +99,7 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div class="exemplo">
+
         <pre class="prettyprint">
 &lt;table class="tabela bordar-tabela"&gt;
     ...
@@ -150,8 +148,7 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-    <div class="exemplo">
+
         <pre class="prettyprint">
 &lt;table class="tabela tablela-zebrada"&gt;
     ...

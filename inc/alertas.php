@@ -21,9 +21,7 @@
             <div class="fechar"><i class="icon-remove"></i></div>
             <strong>Sucesso!</strong> Mensagem para verificação.
         </div>
-    </div>
-    <div class="exemplo">
-<pre class="prettyprint">
+        <pre class="prettyprint">
 &lt;!-- Alerta de Aviso --&gt;
 &lt;div class="alerta alerta-aviso"&gt;
     &lt;div class="fechar"&gt;&lt;i class="icon-remove"&gt;&lt;/i&gt;&lt;/div&gt;
@@ -41,6 +39,6 @@
     &lt;div class="fechar"&gt;&lt;i class="icon-remove"&gt;&lt;/i&gt;&lt;/div&gt;
     &lt;strong&gt;Sucesso!&lt;/strong&gt; Mensagem para verificação.
 &lt;/div&gt;
-</pre> 
+        </pre> 
     </div>
 </section>
