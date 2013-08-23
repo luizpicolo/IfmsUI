@@ -85,7 +85,7 @@ header {
         }
     }
 }
-
+		
 #nav-btn {
     position: absolute;
     top: 0;
@@ -177,10 +177,10 @@ main {
     
     h2 {
         color: $color1;
-        font-size: 2em;
+        font-size: 2.3em;
         font-weight: 200;
         
-        margin: 0 0 10px;
+        margin: 10px 0 0;
         padding: 0; 
     }
     
@@ -229,9 +229,20 @@ main {
     background-color: #f5f5f5;   
 }
 
+/*
+    ----- Media Query 
+*/
 
+@media screen and (max-width: 770px) {
 
+	header {
+		left: -200px; 
+	}
 
+	main {
+		margin: 0 0 0 40px;
+	}
+}
 
 /*
     ----- Grade Responsiva
@@ -447,6 +458,7 @@ $coluna-padding: 10px;
 /*
     ----- Alertas
 */
+
 .alerta {
     
     margin-bottom: 20px;
