@@ -20,12 +20,11 @@
     <body>
         <header>
             <h1>
-                <a href="?pag=principal" class="logo"><abbr title="Instituto Federal de Mato Grosso do Sul">IFMS</abbr>UI</a>
+                <a href="index.php" class="logo"><abbr title="Instituto Federal de Mato Grosso do Sul">IFMS</abbr>UI</a>
             </h1>
 
             <nav>
                 <ul>
-                    <li><a href="index.php?pag=sobre">Sobre <i class="icon-code"></i></a></li>
                     <li><a href="index.php?pag=grids">Grids <i class="icon-puzzle-piece"></i></a></li>
                     <li><a href="index.php?pag=formularios">Formulários <i class="icon-list-alt"></i></a></li>
                     <li><a href="index.php?pag=botoes">Botões <i class="icon-check"></i></a></li>
@@ -39,7 +38,7 @@
 
     <main>
         <?php
-            !isset($_GET["pag"]) ? include("inc/principal.php") : include("inc/" . $_GET["pag"] . ".php");
+            !isset($_GET["pag"]) ? include("inc/sobre.php") : include("inc/" . $_GET["pag"] . ".php");
         ?>
     </main>
 
