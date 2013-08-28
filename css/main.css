@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
 
 .prettyprint {
   font-size: 1.5em;
-  padding: 10px 8px;
+  padding: 15px 15px 0 !important;
   border: 1px solid #ccc !important;
   background-color: #f2f2f2; }
 
@@ -124,9 +124,9 @@ main {
     padding: 0; }
   main h2 {
     color: #50cabd;
-    font-size: 2em;
+    font-size: 2.3em;
     font-weight: 200;
-    margin: 0 0 10px;
+    margin: 10px 0 0;
     padding: 0; }
   main p {
     color: rgba(0, 0, 0, 0.5);
@@ -160,6 +160,15 @@ main {
   border-bottom: 1px solid #ccc;
   background-color: #f5f5f5; }
 
+/*
+    ----- Media Query 
+*/
+@media screen and (max-width: 770px) {
+  header {
+    left: -200px; }
+
+  main {
+    margin: 0 0 0 40px; } }
 /*
     ----- Grade Responsiva
 */
