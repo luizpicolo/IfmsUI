@@ -30,7 +30,7 @@ $coluna-padding: 10px;
         width: $coluna-unidade * $i;
         padding: $coluna-padding;
 
-		border: solid 1px #ccc;
+        border: solid 1px #ccc;
     }
 }
 
@@ -41,4 +41,8 @@ $coluna-padding: 10px;
 .coluna-centralizada {
     float: none !important;
     margin: 0 auto !important;
+}
+
+.sem-bordas {
+   border: none;
 }
