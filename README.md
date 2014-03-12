@@ -1,22 +1,23 @@
-<h1>IFMS <i>User Interface</i> / IFMS-UI</h1>
+# IFMS ***User Interface***  - IFMS-UI
 
-<h2>Descrição</h2>
+## Descrição
 
-<p>A IFMS <i>User Interface</i>, ou IFMS-UI, é uma interface gráfica em desenvolvimento que visará atender projetos de 
-iniciação científica desenvolvidos por alunos/pesquisadores do Instituto Federal de Mato Grosso do Sul - <i>Campus</i> de Nova 
-Andradina. Tem como foco central o desenvolvimento de uma interface minimalista e amigável, a qual priorizará a
-facilidade do uso e os princípios básicos de usabilidade.</p>
+A IFMS ***User Interface***, ou IFMS-UI, é uma interface gráfica em desenvolvimento que visa atender projetos de 
+iniciação científica desenvolvidos por alunos/pesquisadores do [Instituto Federal de Mato Grosso do Sul - ***Campus*** de Nova](http://www,ifms.edu.br) 
+Andradina. 
 
-<h2>Objetivo</h2>
+Tem como foco central o desenvolvimento de uma interface minimalista e amigável, a qual priorizará a facilidade do uso e os princípios básicos de usabilidade.
 
-<p>Contribuir, com uma base de componentes gráficos, para a elaboração de interfaces Web, facilitando assim, a criação 
-de futuros sistemas desenvolvidos pelos alunos.</p>
+## Objetivo
 
-<h2>Demostração</h2>
+Contribuir com uma base de componentes gráficos para a elaboração de interfaces Web, facilitando assim, a criação 
+de futuros sistemas desenvolvidos pelos alunos.
 
-<p>Para demostração acesse:</p>
-<p>http://ifmsui.herokuapp.com</p>
+## Demostração
 
-<h2>Licença de Uso</h2>
-<p>Esta interface gráfica está licenciada sobre a MIT License - http://choosealicense.com/licenses/mit/</p>
+Para demostração acesse:
+[http://ifmsui.herokuapp.com](http://ifmsui.herokuapp.com)
+
+## Licença de Uso
+Esta interface gráfica está licenciada sobre a [MIT License - http://choosealicense.com/licenses/mit/](MIT License - http://choosealicense.com/licenses/mit)
 
