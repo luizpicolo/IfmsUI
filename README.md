@@ -19,5 +19,5 @@ Para demostração acesse:
 [http://ifmsui.herokuapp.com](http://ifmsui.herokuapp.com)
 
 ## Licença de Uso
-Esta interface gráfica está licenciada sobre a [http://luizpicolo.mit-license.org](MIT License - hhttp://luizpicolo.mit-license.org)
+Esta interface gráfica está licenciada sobre a MIT - License[http://luizpicolo.mit-license.org](http://luizpicolo.mit-license.org)
 
